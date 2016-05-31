@@ -1,0 +1,95 @@
+<template name="viewRecipe">
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <div class="container" id="mainContainer">
+      <div class="row">
+        <div class="col-xs-0 col-md-4"></div>
+        <div class="col-xs-12 col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <a href="listRecipes">Back to Main</a>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xs-4">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="" id="editModeFlag">Edit</label>
+                  </div>
+                </div>
+                <div class="col-xs-4">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value="" id="favoriteFlag">Favorite</label>
+                  </div>
+                </div>
+                <div class="col-xs-4">
+                  <button class="button btn btn-primary" id="saveButton">Save</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="form-group">
+                    <label for="usr">Name:</label>
+                    <input type="text" class="form-control" id="recipeName">
+                  </div>
+                </div>
+              </div>
+              <div class="row" id="addIngredientRow">
+                <div class="col-xs-12">
+                  <div class="form-group">
+                    <label for="usr">Add Ingredient:</label>
+                    <div class="row">
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" id="newIngredientText">
+                      </div>
+                      <div class="col-xs-4">
+                        <button class="button btn btn-default" id="newIngredientButton">Add</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            <div class="row">
+                <div class="col-xs-12">
+                  <div class="form-group">
+                    <label for="usr">Ingredients</label>
+                    <div id="ingredientsList">
+
+                  </div>
+                  </div>
+                </div>
+              </div>
+                            <div class="row">
+                <div class="col-xs-12">
+                  <div class="form-group">
+                    <label for="usr">Instructions:</label>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <input type="textarea" class="form-control" id="instructionsText">
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-12">
+                      <button class="button btn-danger btn" id="deleteRecipe">Delete</button>
+                  </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+
+        </div>
+        <div class="col-xs-0 col-md-4"></div>
+      </div>
+    </div>
+
+</template>

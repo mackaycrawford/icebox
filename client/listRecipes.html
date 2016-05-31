@@ -1,0 +1,39 @@
+<template name="listRecipes">
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <div class="container" id="mainContainer">
+      <div class="row">
+        <div class="col-xs-0 col-md-4"></div>
+        <div class="col-xs-12 col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              Icebox App V0.01
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xs-6">
+                  <button class="button btn btn-default"><a href='viewRecipe'>Add</a></button>
+                </div>
+                <div class="col-xs-6 pull-right">
+                  <div class="checkbox pull-right">
+  <label><input type="checkbox" id="showFavorites" value=""><span class='glyphicon glyphicon-fire' aria-hidden='true'></span></label>
+</div>
+                </div>
+              </div>
+              <ul class='list-group' id="recipeList">
+
+              </ul>
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <button class="button btn-warning btn" id="clearFavorites">Clear Favorites</button>
+          </div>
+        </div>
+
+        </div>
+        <div class="col-xs-0 col-md-4"></div>
+      </div>
+    </div>
+
+</template>
