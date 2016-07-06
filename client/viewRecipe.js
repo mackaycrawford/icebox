@@ -41,6 +41,7 @@ Template.viewRecipe.onRendered(function() {
           $(".removeIngredientButton").hide();
           $("#addIngredientRow").hide();
           $(".haveInventoryColumn").show();
+          showInstructionsAsText()
       }
       
       makeEditable = function(){
@@ -50,6 +51,7 @@ Template.viewRecipe.onRendered(function() {
           $(".removeIngredientButton").show();
           $("#addIngredientRow").show();
           $(".haveInventoryColumn").hide();
+          hideInstructionsAsText()
       }
       
       switchModes = function(){
@@ -58,6 +60,24 @@ Template.viewRecipe.onRendered(function() {
           } else {
               makeReadOnly();
           }
+      }
+      
+      
+      hideInstructionsAsText = function(){
+          console.log("hideInstructionsAsText")
+          $("#instructionsText").show()
+          $("#instructionsAsText").hide()
+      }
+      
+      showInstructionsAsText = function(){
+          console.log("showInstructionsAsText")
+          it =  $("#instructionsText").val();
+          console.log("value to copy")
+          console.log(it)
+          $("#instructionsText").hide()
+          $("#instructionsAsText").show()
+          $("#instructionsAsText").html(it)
+          
       }
       
       

@@ -2,3 +2,7 @@
 .ingredientRow{
     margin-top: 10px;
 }
+
+#instructionsAsText{
+    font-size: 1.2em;
+}
